@@ -35,8 +35,16 @@ $(function(){
         $('.icon-th-list').removeClass('active');
     });
 
-    
-    // var mixer = mixitup('.products__inner-box');
+
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').slideToggle();
+    });
+
+
+    $('.header__btn-menu').on('click', function(){
+        $('.header__box').toggleClass('active');
+    });
+
 
     $(window).on("load", function () {
         if ($('.products__inner-box').length) {
